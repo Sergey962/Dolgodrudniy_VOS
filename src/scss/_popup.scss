@@ -1,0 +1,84 @@
+/*POPUP*/
+
+.popup {
+   position: fixed;
+   z-index: 101;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+   top: 0;
+   left: 0;
+   opacity: 0;
+   visibility: hidden;
+   overflow-y: auto;
+   overflow-x: hidden;
+   transition: all 0.8s ease 0s;
+   &:target {
+      opacity: 1;
+      visibility: visible;
+      .popup__content {
+         transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
+         opacity: 1;
+      }
+   }
+   &__area {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+   }
+   &__body {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 10px;
+   }
+   &__content {
+      background-color: rgb(46, 39, 39);
+      color: rgb(245, 245, 245);
+      max-width: 950px;
+      padding: 30px;
+      position: relative;
+      transition: all 0.8s ease 0s;
+      opacity: 0;
+      transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+   }
+   &__close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 20px;
+      color: rgb(239, 239, 239);
+      &:hover {
+         padding: 10px 10px;
+         background-color: #c06f1e;
+         border-radius: 15px;
+      }
+   }
+   &__text {
+      p {
+         margin: 0px 0px 15px 0px;
+         a {
+            color: #FFFF;
+         }
+      }
+      margin: 25px 0px 0px 0px;
+      font-size: 24px;
+      line-height: 30px;
+      text-indent: 20px;
+      &:first-letter {
+         color: red;
+         font-size: 28px;
+         font-weight: bold;
+         text-transform: uppercase;
+         text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+         letter-spacing: 2px;
+      }
+   }
+   span {
+      font-weight: bold;
+      color: #da7108;
+   }
+}

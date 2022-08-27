@@ -1,0 +1,111 @@
+.footer {
+   margin: 50px 0px 0px 0px;
+   background-color: #051945;
+   padding: 0px 82px;
+   a {
+      color: rgb(254, 254, 254);
+      transition: color 0.3s ease 0s;
+      &:hover {
+         color: rgb(26, 128, 0);
+      }
+   }
+}
+
+[class*="line"] {
+   border: 1px solid rgba(151, 151, 151, 0.721);
+   border-width: 0px 0px 2px 0px;
+}
+
+.logo__line {
+   padding: 56px 0px 40px 0px;
+}
+
+.column {
+   width: 33.333%;
+   display: flex;
+   flex-direction: column;
+   p {
+      margin: 15px 0px 0px 0px;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFF;
+   }
+   a {
+      margin: 39px 0px 0px 0px;
+      &:not(:first-child) {
+         margin: 23px 0px 0px 0px;
+      }
+      &:last-child {
+         margin: 23px 0px 48px 0px;
+      }
+   }
+}
+
+.language {
+	display: none;  //todo
+   width: 227px;
+   height: 40px;
+   background: url('../img/icons/world.svg') 24px 50% no-repeat;
+   background-color: #3B3B3B;
+   color: #FFFFFF;
+   margin: 32px 0px 0px 0px;
+   .language-select {
+      position: relative;
+      top: 10px;
+      left: 50px;
+      width: 170px;
+      height: 18px;
+      background-color: #3B3B3B;
+      color: #FFFFFF;
+   }
+}
+
+.footer-links__line {
+   display: flex;
+   justify-content: space-between;
+   .social-block {
+      margin: 33px 0px 0px 0px;
+      a {
+         margin: 0px 8px 0px 0px;
+      }
+   }
+}
+
+.app__line {
+   height: 120px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 40px;
+   transition: opacity 0.3s ease 0s;
+   img:hover {
+      opacity: 0.7;
+   }
+}
+
+.agreements {
+   height: 93px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   p,
+   a {
+      padding: 5px 5px;
+      display: flex;
+      align-items: center;
+		border-radius: 15px;
+      img {
+         width: 20px;
+         height: 20px;
+      }
+      transition: background-color 0.3s ease 0s;
+      &:hover {
+         background-color: #c06f1e;
+         border-radius: 15px;
+      }
+   }
+   p {
+      margin: 0px 0px 0px 1px;
+      color: #FFFFFF;
+   }
+}
