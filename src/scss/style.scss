@@ -50,7 +50,7 @@ h2 {
 h3 {
    color: #5bb41c;
    font-size: 18px;
-	text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+   text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
 }
 
 // h4 {}
@@ -120,7 +120,7 @@ h3 {
 //! INFORMATION
 .information {
    &__box {
-		padding: 15px 0px 0px 0px;
+      padding: 15px 0px 0px 0px;
       background: linear-gradient(to bottom, #84ded5a0, #051945);
    }
    margin: 50px 0px 0px 0px;
@@ -171,12 +171,13 @@ h3 {
 }
 
 //! PHOTO & VIDEO
-
 .events {
-   margin: 25px 0px 0px 0px;
+   margin: 95px 0px 0px 0px;
    display: flex;
    width: 100%;
    min-height: 300px;
+   justify-content: space-around;
+   align-items: center;
    h2:before {
       display: block;
       content: " ";
@@ -187,14 +188,32 @@ h3 {
    }
 }
 
+.video,
 .photo {
    padding: 15px;
-   width: 50%;
-}
-
-.video {
-   padding: 15px;
-   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+	border-radius: 25px;
+   align-items: center;
+   background: url('../img/icons/folder.png') 0 0/100% 100% no-repeat;
+   transition: background-color 0.3s ease 0s;
+   h2 {
+      position: relative;
+      left: -210px;
+      top: -75px;
+   }
+   a {
+      height: 200px;
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   &:hover {
+      background-color: #051945;
+      border-radius: 25px;
+   }
 }
 
 @import "chat.scss";

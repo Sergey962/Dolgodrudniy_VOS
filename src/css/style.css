@@ -419,12 +419,17 @@ h3 {
 }
 
 .events {
-  margin: 25px 0px 0px 0px;
+  margin: 95px 0px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-height: 300px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .events h2:before {
   display: block;
@@ -435,14 +440,52 @@ h3 {
   pointer-events: none;
 }
 
+.video,
 .photo {
   padding: 15px;
-  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../img/icons/folder.png") 0 0/100% 100% no-repeat;
+  -webkit-transition: background-color 0.3s ease 0s;
+  -o-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
 }
-
-.video {
-  padding: 15px;
-  width: 50%;
+.video h2,
+.photo h2 {
+  position: relative;
+  left: -210px;
+  top: -75px;
+}
+.video a,
+.photo a {
+  height: 200px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.video:hover,
+.photo:hover {
+  background-color: #051945;
+  border-radius: 25px;
 }
 
 .chat__container {
@@ -546,7 +589,7 @@ h3 {
 }
 
 .footer {
-  margin: 50px 0px 0px 0px;
+  margin: 45px 0px 0px 0px;
   background-color: #051945;
   padding: 0px 82px;
 }
