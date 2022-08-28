@@ -164,7 +164,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #84ded5;
+  background: -o-linear-gradient(55deg, #84ded5, #051945);
+  background: linear-gradient(35deg, #84ded5, #051945);
   padding: 0px 0px 0px 15px;
   -webkit-transition: background-color 0.3s ease 0s;
   -o-transition: background-color 0.3s ease 0s;
@@ -193,7 +194,6 @@ body {
           align-items: flex-end;
   min-height: 150px;
   padding: 0px 15px;
-  background-color: rgba(132, 222, 213, 0.6274509804);
   -webkit-transition: background-color 0.3s ease 0s;
   -o-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
@@ -236,7 +236,7 @@ body {
   font-size: 22px;
   padding: 5px 10px;
   border-radius: 5px;
-  text-shadow: 1px 0 1px #ffc400, 0 1px 1px #ffc400, -1px 0 1px #ffc400, 0 -1px 1px #ffc400;
+  text-shadow: 2px 0 2px #ffffff, 0 2px 2px #ffffff, -2px 0 2px #ffffff, 0 -2px 2px #ffffff;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -262,7 +262,7 @@ h5 {
   font-weight: bold;
   text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
   letter-spacing: 0.5px;
-  color: #336a0b;
+  color: #5bb41c;
 }
 
 h1 {
@@ -276,8 +276,9 @@ h2 {
 }
 
 h3 {
-  color: #00b00c;
+  color: #5bb41c;
   font-size: 18px;
+  text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
 }
 
 .vos-dol-town {
@@ -689,4 +690,8 @@ h3 {
 .agreements p {
   margin: 0px 0px 0px 1px;
   color: #FFFFFF;
+}
+
+.min-footer__container {
+  display: none;
 }

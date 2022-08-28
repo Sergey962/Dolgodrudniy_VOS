@@ -34,7 +34,7 @@ h5 {
    font-weight: bold;
    text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
    letter-spacing: 0.5px;
-   color: #336a0b;
+   color: #5bb41c;
 }
 
 h1 {
@@ -48,8 +48,9 @@ h2 {
 }
 
 h3 {
-   color: #00b00c;
+   color: #5bb41c;
    font-size: 18px;
+	text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
 }
 
 // h4 {}
@@ -170,6 +171,7 @@ h3 {
 }
 
 //! PHOTO & VIDEO
+
 .events {
    margin: 25px 0px 0px 0px;
    display: flex;

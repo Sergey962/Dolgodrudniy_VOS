@@ -7,7 +7,7 @@
    &__container {
       display: flex;
       align-items: center;
-      background: #84ded5;
+      background: linear-gradient(35deg, #84ded5, #051945);
       padding: 0px 0px 0px 15px;
       transition: background-color 0.3s ease 0s;
       a:hover {
@@ -26,7 +26,6 @@
          align-items: flex-end;
          min-height: 150px;
          padding: 0px 15px;
-         background-color: #84ded5a0;
          transition: background-color 0.3s ease 0s;
          a:hover {
             background-color: #e9ff3fa0;
@@ -37,6 +36,7 @@
 }
 
 //! Search
+
 .search-form__container {
    display: none;
    margin: 55px 0px 0px 0px;
@@ -56,6 +56,7 @@
 }
 
 //! NAV
+
 .menu {
    &__body {
       margin: 45px 0px 0px 0px;
@@ -71,7 +72,7 @@
          font-size: 22px;
          padding: 5px 10px;
          border-radius: 5px;
-			text-shadow: 1px 0 1px #ffc400, 0 1px 1px #ffc400, -1px 0 1px #ffc400, 0 -1px 1px #ffc400;
+			text-shadow: 2px 0 2px #ffffff, 0 2px 2px #ffffff, -2px 0 2px #ffffff, 0 -2px 2px #ffffff;
          transition: all 0.3s ease 0s;
          &:hover {
             padding: 5px 10px;
