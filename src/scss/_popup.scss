@@ -46,15 +46,19 @@
       transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
    }
    &__close {
+      border-radius: 25px;
+      padding: 5px 10px;
       position: absolute;
       top: 15px;
       right: 15px;
       font-size: 20px;
-      color: rgb(239, 239, 239);
+      color: #da7108;
+      transition: background-color 0.3s ease 0s;
       &:hover {
-         padding: 10px 10px;
+         padding: 5px 10px;
          background-color: #c06f1e;
-         border-radius: 15px;
+         border-radius: 25px;
+         color: rgb(255, 255, 255);
       }
    }
    &__text {
@@ -68,17 +72,38 @@
       font-size: 24px;
       line-height: 30px;
       text-indent: 20px;
-      &:first-letter {
-         color: red;
-         font-size: 28px;
-         font-weight: bold;
-         text-transform: uppercase;
-         text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
-         letter-spacing: 2px;
-      }
    }
    span {
+      padding: 5px 10px;
       font-weight: bold;
+      border-radius: 25px;
       color: #da7108;
+      &:hover {
+         padding: 5px 10px;
+         background-color: #c06f1e;
+         border-radius: 25px;
+         color: rgb(255, 255, 255);
+      }
    }
+}
+
+//! bank
+.bank .popup__text p span:hover {
+   display: none;
+}
+
+// ! help
+.join,
+.help .popup__text {
+   & p:first-letter {
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 2px;
+   }
+}
+
+.dev {
+	.popup_title {
+		margin: 30px 0px 0px 0px;
+	}
 }

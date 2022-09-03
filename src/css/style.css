@@ -281,6 +281,28 @@ h3 {
   text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
 }
 
+/*ARROW*/
+/*
+.back-to-top {
+	border: 1px solid red;
+	@include resp-font(35,14);
+   padding: 10px 15px;
+	position: fixed;
+   bottom: 5px;
+   right: 245px;
+   z-index: 9999;
+   background: #59BD5A;
+   color: #FFFF;
+   cursor: pointer;
+   display: none;
+   &:hover {
+      background: #4da44f;
+   }
+   &-show {
+      display: block;
+   }
+}
+*/
 .vos-dol-town {
   margin: 150px 0px 0px 0px;
   width: 100%;
@@ -418,60 +440,38 @@ h3 {
   font-size: 18px;
 }
 
-.events {
-  margin: 95px 0px 0px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  min-height: 300px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.events h2:before {
+.events:before {
   display: block;
   content: " ";
-  margin-top: -170px;
-  height: 170px;
+  margin-top: -150px;
+  height: 150px;
   visibility: hidden;
   pointer-events: none;
 }
-
-.video,
-.photo {
-  padding: 15px;
+.events__topic {
+  margin: 35px 0px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 25px;
+}
+.events__topic h2 {
+  width: 50%;
+}
+.events__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("../img/icons/folder.png") 0 0/100% 100% no-repeat;
-  -webkit-transition: background-color 0.3s ease 0s;
-  -o-transition: background-color 0.3s ease 0s;
-  transition: background-color 0.3s ease 0s;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 45px 0px 25px 0px;
 }
-.video h2,
-.photo h2 {
-  position: relative;
-  left: -210px;
-  top: -75px;
-}
-.video a,
-.photo a {
-  height: 200px;
-  width: 300px;
+.events__content a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,15 +481,23 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.video:hover,
-.photo:hover {
-  background-color: #051945;
   border-radius: 25px;
+  width: 350px;
+  height: 250px;
+  background: url("../img/icons/folder.png") center no-repeat;
+  background-size: 100% 100%;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
-
-.chat__container {
+.events__content a img {
   display: none;
+}
+.events__content a:hover {
+  background-color: #051945;
+}
+.events__content a:hover img {
+  display: block;
 }
 
 /*POPUP*/
@@ -552,16 +560,22 @@ h3 {
           transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
 .popup__close {
+  border-radius: 25px;
+  padding: 5px 10px;
   position: absolute;
   top: 15px;
   right: 15px;
   font-size: 20px;
-  color: rgb(239, 239, 239);
+  color: #da7108;
+  -webkit-transition: background-color 0.3s ease 0s;
+  -o-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
 }
 .popup__close:hover {
-  padding: 10px 10px;
+  padding: 5px 10px;
   background-color: #c06f1e;
-  border-radius: 15px;
+  border-radius: 25px;
+  color: rgb(255, 255, 255);
 }
 .popup__text {
   margin: 25px 0px 0px 0px;
@@ -575,20 +589,36 @@ h3 {
 .popup__text p a {
   color: white;
 }
-.popup__text:first-letter {
-  color: red;
+.popup span {
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 25px;
+  color: #da7108;
+}
+.popup span:hover {
+  padding: 5px 10px;
+  background-color: #c06f1e;
+  border-radius: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.bank .popup__text p span:hover {
+  display: none;
+}
+
+.join p:first-letter,
+.help .popup__text p:first-letter {
   font-size: 28px;
   font-weight: bold;
-  text-transform: uppercase;
-  text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
   letter-spacing: 2px;
 }
-.popup span {
-  font-weight: bold;
-  color: #da7108;
+
+.dev .popup_title {
+  margin: 30px 0px 0px 0px;
 }
 
 .footer {
+  font-size: 18px;
   margin: 45px 0px 0px 0px;
   background-color: #051945;
   padding: 0px 82px;
@@ -600,7 +630,7 @@ h3 {
   transition: color 0.3s ease 0s;
 }
 .footer a:hover {
-  color: rgb(26, 128, 0);
+  color: #da7108;
 }
 
 [class*=line] {

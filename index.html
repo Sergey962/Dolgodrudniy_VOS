@@ -16,6 +16,7 @@
          <div class="header__container">
             <a href="https://sergey962.github.io/Dolgodrudniy_VOS/"><img src="src/img/logo/logo.png" alt="logo"></a>
             <div class="content__box">
+               <!-- ! NAV -->
                <div class="header__menu">
                   <nav class="menu__body">
                      <ul class="menu__list">
@@ -42,6 +43,7 @@
                      </ul>
                   </nav>
                </div>
+               <!-- ! SEARCH -->
                <div class="search-form__container">
                   <form class="search-form" method="get">
                      <input id="" type="search" name="search" placeholder="Поиск по сайту...">
@@ -54,6 +56,11 @@
       <!-- !Main -->
 
       <main class="main">
+         <!-- ! ARROW -->
+         <!-- <a class="back-to-top" title="Наверх">↑</a> -->
+
+         <!-- ! JAMBOTRON -->
+
          <div class="vos-dol-town">
             <div class="vos-dol-town__content">
                <img src="src/img/logo/ussr.png" alt="">
@@ -90,13 +97,8 @@
                         </a>
                      </li>
                      <li class="information__item">
-                        <a class="information__link" href="http://">
-                           <h3>Аудиокниги</h3>
-                        </a>
-                     </li>
-                     <li class="information__item">
-                        <a class="information__link" href="http://">
-                           <h3>Видеофильмы</h3>
+                        <a class="information__link" href="https://disk.yandex.ru/d/RL75k5d4ZHzw6w">
+                           <h3>ПО</h3>
                         </a>
                      </li>
                      <li class="information__item">
@@ -115,7 +117,7 @@
          </section>
 
          <!-- ! -->
-
+         <!-- 
          <div class="chat__container">
             <div id="divMessages" class="message__box">
             </div>
@@ -126,17 +128,17 @@
                </div>
             </div>
          </div>
+         -->
+         <!-- ! EVENTS -->
 
-         <!-- ! -->
-
-         <div class="events">
-            <div class="photo">
-               <h2 id="events">Фото</h2>
-               <a href=""><img src="src/img/icons/photo_hover.png" alt="photo"></a>
+         <div id="events" class="events">
+            <div class="events__topic">
+               <h2 >Фото</h2>
+               <!-- <h2>Видео</h2> -->
             </div>
-            <div class="video">
-               <h2>Видео</h2>
-               <a href=""><img src="src/img/icons/video_hover.png" alt="video"></a>
+            <div class="events__content">
+               <a target="_blank" href="https://disk.yandex.ru/d/z0x7zaiV6cH7Qw"><img src="src/img/icons/photo_hover.png" alt="photo"></a>
+               <!--todo uncomment for video <a target="_blank" href=""><img src="src/img/icons/video_hover.png" alt="video"></a> -->
             </div>
          </div>
       </main>
@@ -150,6 +152,57 @@
             </div>
             <div class="footer-links__line">
                <div class="column">
+
+                  <!-- todo LANGUAGE -->
+
+                  <div class="language">
+                     <select class="language-select"> 
+								<option>Русский</option> 
+								<option>English</option> 
+							</select>
+                  </div>
+                  <p><span>#</span>Всероссийское</p>
+                  <p><span>#</span>Общество</p>
+                  <p><span>#</span>Слепых</p>
+                  <p><span>#</span>ВОС</p>
+                  <div class="social-block">
+                     <a href="http://"><img src="" alt=""></a>
+                     <a href="http://"><img src="" alt=""></a>
+                     <a href="http://"><img src="" alt=""></a>
+                  </div>
+               </div>
+               <div class="column">
+                  <a target="_blank" href="https://mkkprf.ru/otdeleniya-59-dolgoprudny.html">Сотрудничество с КПРФ</a>
+                  <a target="_blank" href="https://www.vos.org.ru/index.php?option=com_content&view=article&id=2913:ustav-obscherossiyskoy-obschestvennoy-organizacii-invalidov-vserossiyskoe-ordena-trudovogo-krasnogo-znameni-obschestvo-slepyh&catid=127&Itemid=282">Устав ВОС</a>
+                  <a href="#help">Помощь организации</a>
+                  <a href="#dev">Отчет о проделаной работе</a>
+               </div>
+               <div class="column">
+                  <a href="http://"></a>
+                  <a href="http://"></a>
+                  <a href="http://"></a>
+                  <a href="http://"></a>
+               </div>
+            </div>
+            <div class="agreements">
+               <a target="_blank" href="https://github.com/Eugvok"><img src="src/img/icons/25231.png" alt="git">
+                  <p>@Eugvok</p>
+               </a>
+               <!-- <a href="http://">Пользовательское соглашение</a> -->
+            </div>
+         </div>
+
+         <!-- ! ADAPTIVE 790px -->
+
+         <div class="min-footer__container">
+            <div class="logo__line">
+               <a target="_blank" id="foot" href="https://www.vos.org.ru/"><img src="src/img/logo/logo_footer.png" alt="logo"></a>
+            </div>
+            <div class="footer-links__line">
+               <div class="column">
+
+                  <!-- todo LANGUAGE -->
+
                   <div class="language">
                      <select class="language-select"> 
 								<option>Русский</option> 
@@ -168,9 +221,9 @@
                </div>
                <div class="column">
                   <a href="http://">Сотрудничество с КПРФ</a>
-                  <a href="http://">Устав ВОС</a>
+                  <a target="_blanck" href="https://www.vos.org.ru/index.php?option=com_content&view=article&id=2913:ustav-obscherossiyskoy-obschestvennoy-organizacii-invalidov-vserossiyskoe-ordena-trudovogo-krasnogo-znameni-obschestvo-slepyh&catid=127&Itemid=282">Устав ВОС</a>
                   <a href="#help">Помощь организации</a>
-                  <a href="#help">Отчет о проделаной работе</a>
+                  <a href="#dev">Отчет о проделаной работе</a>
                </div>
                <div class="column">
                   <a href="http://"></a>
@@ -180,54 +233,10 @@
                </div>
             </div>
             <div class="agreements">
-               <a href="https://github.com/Eugvok"><img src="src/img/icons/25231.png" alt="git">
+               <a target="_blank" href="https://github.com/Eugvok"><img src="src/img/icons/25231.png" alt="git">
                   <p>@Eugvok</p>
                </a>
-               <a href="http://">Пользовательское соглашение</a>
-            </div>
-         </div>
-
-         <!-- ! ADAPTIVE 790px -->
-
-         <div class="min-footer__container">
-            <div class="logo__line">
-               <img src="src/img/logo/white-logo.svg" alt="">
-            </div>
-            <div class="footer-links">
-               <div class="column__line">
-                  <div class="language">
-                     <select class="language-select"> 
-								<option>Русский</option> 
-								<option>English</option> 
-							</select>
-                  </div>
-                  <p><span>#</span>UberEats</p>
-                  <div class="social-block">
-                     <a href="http://"><img src="src/img/icons/facebook.svg" alt=""></a>
-                     <a href="http://"><img src="src/img/icons/twitter.svg" alt=""></a>
-                     <a href="http://"><img src="src/img/icons/instagram.svg" alt=""></a>
-                  </div>
-               </div>
-               <div class="column__line">
-                  <a href="http://">Об UberEats</a>
-                  <a href="http://">Станьте партнёром по доставке</a>
-                  <a href="http://">Станьте парнёром-рестораном</a>
-               </div>
-               <div class="column__line">
-                  <a href="http://">Все города</a>
-                  <a href="http://">Цены</a>
-                  <a href="http://">Помощь</a>
-                  <a href="http://">FAQs</a>
-               </div>
-            </div>
-            <div class="app__line">
-               <a href="http://"><img src="src/img/icons/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.png" alt=""></a>
-               <a href="http://"><img src="src/img/icons/en_badge_web_generic-cf6dad406f.png" alt=""></a>
-            </div>
-            <div class="agreements">
-               <p>© 2017 Uber Technologies Inc.</p>
-               <a href="http://">Обработка персональных данных</a>
-               <a href="http://">Пользовательское соглашение</a>
+               <!-- <a href="http://">Пользовательское соглашение</a> -->
             </div>
          </div>
       </footer>
@@ -240,11 +249,11 @@
 
    <!--! HELP -->
 
-   <div id="help" class="popup">
+   <div id="help" class="help popup">
       <a href="##" class="popup__area"></a>
       <div class="popup__body">
          <div class="popup__content">
-            <a href="##" class="popup__close">X Закрыть</a>
+            <a href="##" class="popup__close">Закрыть</a>
             <div class="popup_title">
                <h3>Помощь организации</h3>
             </div>
@@ -261,7 +270,7 @@
                   <p align="right"><a href="#bank"><span>Реквизиты</span></a> Московской Областной организации ВОС
                   </p>
                </p>
-               <p align="right"><a href="http://"><span>Отчет</span> по расходам пожертвованний</a></p>
+               <p align="right"><a href="#dev"><span>Отчет</span></a> по расходам пожертвованний</p>
             </div>
          </div>
       </div>
@@ -269,7 +278,7 @@
 
    <!-- !BANK REQUISITS -->
 
-   <div id="bank" class="popup">
+   <div id="bank" class="bank popup">
       <a href="##" class="popup__area"></a>
       <div class="popup__body">
          <div class="popup__content">
@@ -286,7 +295,7 @@
                <p><span>КПП: </span>770 901 001</p>
                <p><span>Получатель:</span> «МОО ОООИ ВОС»</p>
                <p>В назначении платежа не забудьте<span> указать: </span>«для долгопрудненской МО ВОС»</p>
-               <p><span>Председатель</span> долгопрудненской МО ВОС - С.В. Гладков</p>
+               <p><span>Председатель</span>долгопрудненской МО ВОС - С.В. Гладков</p>
             </div>
          </div>
       </div>
@@ -294,7 +303,7 @@
 
    <!-- !JOIN VOS -->
 
-   <div id="join" class="popup">
+   <div id="join" class="join popup">
       <a href="##" class="popup__area"></a>
       <div class="popup__body">
          <div class="popup__content">
@@ -314,7 +323,25 @@
          </div>
       </div>
    </div>
-   <!-- <script type="modules" src="src/js/script.js"></script>  -->
+
+   <!--! dev screen -->
+
+   <div id="dev" class="dev popup">
+      <a href="##" class="popup__area"></a>
+      <div class="popup__body">
+         <div class="popup__content">
+            <a href="##" class="popup__close">X Закрыть</a>
+            <div class="popup_title">
+               <h3>Страница в разработке</h3>
+            </div>
+            <div class="popup__text">
+               <p></p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="src/js/script.js"></script>
 </body>
 
 </html>

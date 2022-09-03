@@ -1,4 +1,5 @@
 .footer {
+	font-size: 18px;
    margin: 45px 0px 0px 0px;
    background-color: #051945;
    padding: 0px 82px;
@@ -6,7 +7,7 @@
       color: rgb(254, 254, 254);
       transition: color 0.3s ease 0s;
       &:hover {
-         color: rgb(26, 128, 0);
+         color: #da7108;
       }
    }
 }
