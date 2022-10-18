@@ -1,7 +1,9 @@
 @import "fonts.scss";
 @import "reset.scss";
 @import "utilits.scss";
-//++++++++++++++++++
+
+/*+++++++BEGIN++++++++*/
+
 body {
    font-family: $fontfamily;
    font-style: normal;
@@ -19,7 +21,9 @@ body {
    margin: 0px auto;
 }
 
-//Header
+
+/*Header*/
+
 @import "header.scss";
 .main {
    flex: 1 1 auto;
@@ -41,7 +45,7 @@ h1 {
    line-height: 42px;
    margin: 0px 0px 0px 15px;
    @include resp-font(26, 16);
-   color: #5bb41c;
+   color: #fa7900;
    text-shadow: 2px 0 2px #ffffff, 0 2px 2px #ffffff, -2px 0 2px #ffffff, 0 -2px 2px #ffffff;
 }
 
@@ -81,9 +85,11 @@ h3 {
 }
 */
 
-//! Jambotron
+
+/*Jambotron*/
+
 .vos-dol-town {
-	border-radius: 0px 0px 25px 25px;
+   border-radius: 0px 0px 25px 25px;
    margin: 110px 0px 0px 0px;
    width: 100%;
    padding: 15px;
@@ -101,7 +107,9 @@ h3 {
    }
 }
 
-//! CONTACTS
+
+/*CONTACTS*/
+
 .contacts {
    &__container {
       padding: 25px 15px;
@@ -126,11 +134,13 @@ h3 {
       }
    }
    &__body {
-      margin: 0px 20px 0px 0px;
+      margin: 25px 20px 0px 0px;
    }
    &__item {
-      margin: 10px 0px 0px 0px;
-      font-size: 20px;
+      margin: 15px 0px 0px 0px;
+      line-height: 30px;
+      @include resp-font(20,
+      12);
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       span {
          margin: 0px 10px 0px 0px;
@@ -149,10 +159,12 @@ h3 {
    }
 }
 
-//! INFORMATION
+
+/*INFORMATION*/
+
 .information {
    &__box {
-		border-radius: 25px;
+      border-radius: 25px;
       padding: 50px 0px 100px 0px;
       background: linear-gradient(to bottom, #84ded5a0, #051945);
    }
@@ -187,18 +199,18 @@ h3 {
       z-index: 10;
    }
    &__item {
-      height: 30px;
-      margin: 15px 0px 0px 0px;
+      margin: 35px 0px 0px 0px;
    }
    &__link {
-      //!h3
-      font-size: 20px;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      color: #000;
-      line-height: 30px;
-      transition: background-color 0.3s ease 0s;
-      h3:hover {
-         color: #ffc400;
+      h3 {
+         @include resp-font(18,
+         12);
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         line-height: 30px;
+         transition: background-color 0.3s ease 0s;
+         &:hover {
+            color: #ffc400;
+         }
       }
    }
 }
@@ -217,7 +229,9 @@ h3 {
    }
 }
 
-//! PHOTO & VIDEO
+
+/*PHOTO & VIDEO*/
+
 .events {
    &:before {
       display: block;
@@ -232,7 +246,7 @@ h3 {
       display: flex;
       justify-content: center; //todo to remove for video
       h2 {
-         width: 50%;
+         width: 60%;
       }
    }
    &__content {
@@ -245,7 +259,7 @@ h3 {
          justify-content: center;
          align-items: center;
          border-radius: 25px;
-         width: 350px;
+         width: 300px;
          height: 250px;
          background: url('../img/icons/folder.png') center no-repeat;
          background-size: 100% 100%;
@@ -265,6 +279,4 @@ h3 {
 
 @import "burger.scss";
 @import "popup.scss";
-//FOOTER 
 @import "footer.scss";
-@import "responsive.scss";
