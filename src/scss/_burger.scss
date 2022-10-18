@@ -1,0 +1,24 @@
+@media (max-width:1267.98px) {
+   .icon-menu {
+      width: 24px;
+      height: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 0px 0px 0px 20px;
+      &:after,
+      &:before {
+         content: "";
+         background-color: #5bb41c;
+         height: 2px;
+      }
+      span {
+         height: 2px;
+         background-color: #5bb41c;
+      }
+   }
+	.header__menu {
+      display: none;
+   }
+}
+

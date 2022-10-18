@@ -1,62 +1,65 @@
-   @import "fonts.scss";
-   @import "reset.scss";
-   @import "utilits.scss";
-   //++++++++++++++++++
-   body {
-      font-family: $fontfamily;
-      font-style: normal;
-      font-size: 14px;
-      font-weight: 400;
-      color: black;
-   }
-   
-   .wrapper {
-      min-height: 100%;
-      max-width: $maw+px;
-      // overflow: hidden;  //todo!
-      display: flex;
-      flex-direction: column;
-      margin: 0px auto;
-   }
-   
-   //Header
-   @import "header.scss";
-   .main {
-      flex: 1 1 auto;
-   }
-   
-   h1,
-   h2,
-   h3,
-   h4,
-   h5 {
-      font-family: 'Cabin', sans-serif;
-      font-weight: bold;
-      text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
-      letter-spacing: 0.5px;
-      color: #5bb41c;
-   }
-   
-   h1 {
-      line-height: 42px;
-      margin: 0px 0px 0px 15px;
-      font-size: 36px;
-   }
-   
-   h2 {
-      font-size: 32px;
-   }
-   
-   h3 {
-      color: #5bb41c;
-      font-size: 18px;
-      text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
-   }
-   
-   // h4 {}
-   //? h5 {} in scss/_header.scss
-   /*ARROW*/
-   /*
+@import "fonts.scss";
+@import "reset.scss";
+@import "utilits.scss";
+//++++++++++++++++++
+body {
+   font-family: $fontfamily;
+   font-style: normal;
+   font-size: 14px;
+   font-weight: 400;
+   color: black;
+}
+
+.wrapper {
+   min-height: 100%;
+   max-width: $maw+px;
+   // overflow: hidden;  //todo!
+   display: flex;
+   flex-direction: column;
+   margin: 0px auto;
+}
+
+//Header
+@import "header.scss";
+.main {
+   flex: 1 1 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+   font-family: 'Cabin', sans-serif;
+   font-weight: bold;
+   text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+   letter-spacing: 0.5px;
+   color: #5bb41c;
+}
+
+h1 {
+   line-height: 42px;
+   margin: 0px 0px 0px 15px;
+   @include resp-font(26, 16);
+   color: #5bb41c;
+   text-shadow: 2px 0 2px #ffffff, 0 2px 2px #ffffff, -2px 0 2px #ffffff, 0 -2px 2px #ffffff;
+}
+
+h2 {
+   font-size: 24px;
+}
+
+h3 {
+   @include resp-font(18, 16);
+}
+
+// h4 {}
+//? h5 {} in scss/_header.scss
+
+/*ARROW*/
+
+
+/*
 .back-to-top {
 	border: 1px solid red;
 	@include resp-font(35,14);
@@ -77,170 +80,191 @@
    }
 }
 */
-   
-   //! Jambotron
-   .vos-dol-town {
-      margin: 150px 0px 0px 0px;
-      width: 100%;
-      padding: 15px;
-      min-height: 403px;
+
+//! Jambotron
+.vos-dol-town {
+	border-radius: 0px 0px 25px 25px;
+   margin: 110px 0px 0px 0px;
+   width: 100%;
+   padding: 15px;
+   height: 403px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-start;
+   background: url('../img/back/background.jpg') 0 0/100% auto no-repeat;
+   .vos-dol-town__content {
       display: flex;
-      justify-content: flex-end;
-      align-items: flex-start;
-      background: url('../img/back/background.jpg') 0 0/100% auto no-repeat;
-      .vos-dol-town__content {
-         display: flex;
-         align-items: center;
-         img {
-            position: relative;
-            width: 81px;
-            height: 98px;
-            top: 60px;
-            left: 620px;
-         }
+      align-items: center;
+      span {
+         float: right;
       }
    }
-   
-   //! CONTACTS
-   .contacts {
-      &__container {
-         padding: 25px 15px;
-         display: flex;
-         justify-content: space-around;
-         align-items: center;
-         img {
-            width: 16%;
-            height: auto;
-         }
-      }
-      h2 {
-         margin: 25px 0px 0px 0px;
-         text-align: center;
-         &:before {
-            display: block;
-            content: " ";
-            margin-top: -170px;
-            height: 170px;
-            visibility: hidden;
-            pointer-events: none;
-         }
-      }
-      &__body {
-         margin: 0px 20px 0px 0px;
-      }
-      &__item {
-         margin: 10px 0px 0px 0px;
-         font-size: 20px;
-         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-         span {
-            margin: 0px 10px 0px 0px;
-            color: rgb(2, 91, 255);
-            text-shadow: 1px 0 1px rgb(23, 142, 132), 0 1px 1px rgb(23, 142, 132), -1px 0 1px rgb(23, 142, 132), 0 -1px 1px rgb(23, 142, 132);
-         }
-      }
-   }
-   
-   //! INFORMATION
-   .information {
-      &__box {
-         padding: 15px 0px 0px 0px;
-         background: linear-gradient(to bottom, #84ded5a0, #051945);
-      }
-      margin: 50px 0px 0px 0px;
+}
+
+//! CONTACTS
+.contacts {
+   &__container {
+      padding: 25px 15px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
       img {
-         width: 26%;
+         width: 152px;
          height: auto;
-         border-radius: 15px;
-      }
-      h2 {
-         margin: 25px 0px 0px 0px;
-         text-align: center;
-         &:before {
-            display: block;
-            content: " ";
-            margin-top: -170px;
-            height: 170px;
-            visibility: hidden;
-            pointer-events: none;
-         }
-      }
-      &__body {
-         min-height: 400px;
-         padding: 35px 15px;
-         display: flex;
-         flex-direction: row-reverse;
-         justify-content: space-around;
-         align-items: center;
-      }
-      &__list {
-         width: 40%;
-         position: relative;
-         z-index: 10;
-      }
-      &__item {
-         height: 30px;
-         margin: 15px 0px 0px 0px;
-      }
-      &__link {
-         font-size: 20px;
-         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-         color: #000;
-         transition: background-color 0.3s ease 0s;
-         h3:hover {
-            color: #ffc400;
-            font-size: 18px;
-         }
       }
    }
-   
-   //! PHOTO & VIDEO
-   .events {
+   h2 {
+      margin: 25px 0px 0px 0px;
+      text-align: center;
       &:before {
          display: block;
          content: " ";
-         margin-top: -150px;
-         height: 150px;
+         margin-top: -170px;
+         height: 170px;
          visibility: hidden;
          pointer-events: none;
       }
-      &__topic {
-         margin: 35px 0px 0px 0px;
-         display: flex;
-			justify-content: center; //todo to remove for video
-         h2 {
-            width: 50%;
-         }
+   }
+   &__body {
+      margin: 0px 20px 0px 0px;
+   }
+   &__item {
+      margin: 10px 0px 0px 0px;
+      font-size: 20px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      span {
+         margin: 0px 10px 0px 0px;
+         color: rgb(2, 91, 255);
+         text-shadow: 1px 0 1px rgb(23, 142, 132), 0 1px 1px rgb(23, 142, 132), -1px 0 1px rgb(23, 142, 132), 0 -1px 1px rgb(23, 142, 132);
       }
-      &__content {
+   }
+}
+
+@media screen and (max-width: 899.98px) {
+   .contacts {
+      &__container {
          display: flex;
+         flex-direction: column;
+      }
+   }
+}
+
+//! INFORMATION
+.information {
+   &__box {
+		border-radius: 25px;
+      padding: 50px 0px 100px 0px;
+      background: linear-gradient(to bottom, #84ded5a0, #051945);
+   }
+   margin: 50px 0px 0px 0px;
+   img {
+      width: 322px;
+      height: auto;
+      border-radius: 15px;
+   }
+   h2 {
+      margin: 25px 0px 0px 0px;
+      text-align: center;
+      &:before {
+         display: block;
+         content: " ";
+         margin-top: -170px;
+         height: 170px;
+         visibility: hidden;
+         pointer-events: none;
+      }
+   }
+   &__body {
+      padding: 35px 15px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      align-items: center;
+   }
+   &__list {
+      width: 40%;
+      position: relative;
+      z-index: 10;
+   }
+   &__item {
+      height: 30px;
+      margin: 15px 0px 0px 0px;
+   }
+   &__link {
+      //!h3
+      font-size: 20px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #000;
+      line-height: 30px;
+      transition: background-color 0.3s ease 0s;
+      h3:hover {
+         color: #ffc400;
+      }
+   }
+}
+
+@media screen and (max-width: 899.98px) {
+   .information {
+      &__body {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
          align-items: center;
-         justify-content: space-around;
-         margin: 45px 0px 25px 0px;
-         a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 25px;
-            width: 350px;
-            height: 250px;
-            background: url('../img/icons/folder.png') center no-repeat;
-            background-size: 100% 100%;
-				transition: all 0.3s ease 0s;
+      }
+      &__list {
+         width: 80%;
+      }
+   }
+}
+
+//! PHOTO & VIDEO
+.events {
+   &:before {
+      display: block;
+      content: " ";
+      margin-top: -150px;
+      height: 150px;
+      visibility: hidden;
+      pointer-events: none;
+   }
+   &__topic {
+      margin: 35px 0px 0px 0px;
+      display: flex;
+      justify-content: center; //todo to remove for video
+      h2 {
+         width: 50%;
+      }
+   }
+   &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 45px 0px 25px 0px;
+      a {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 25px;
+         width: 350px;
+         height: 250px;
+         background: url('../img/icons/folder.png') center no-repeat;
+         background-size: 100% 100%;
+         transition: all 0.3s ease 0s;
+         img {
+            display: none;
+         }
+         &:hover {
+            background-color: #051945;
             img {
-               display: none;
-            }
-            &:hover {
-               background-color: #051945;
-					img {
-						display: block;
-					}
+               display: block;
             }
          }
       }
    }
-   
-   // @import "chat.scss";
-   @import "popup.scss";
-   //FOOTER 
-   @import "footer.scss";
-   @import "responsive.scss";
+}
+
+@import "burger.scss";
+@import "popup.scss";
+//FOOTER 
+@import "footer.scss";
+@import "responsive.scss";

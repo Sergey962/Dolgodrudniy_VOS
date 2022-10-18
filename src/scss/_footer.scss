@@ -1,8 +1,9 @@
 .footer {
-	font-size: 18px;
+   font-size: 18px;
    margin: 45px 0px 0px 0px;
    background-color: #051945;
    padding: 0px 82px;
+	border-radius: 25px 25px 0px 0px;
    a {
       color: rgb(254, 254, 254);
       transition: color 0.3s ease 0s;
@@ -43,21 +44,20 @@
 }
 
 .language {
-	display: none;  //todo
    width: 227px;
    height: 40px;
-   background: url('../img/icons/world.svg') 24px 50% no-repeat;
-   background-color: #3B3B3B;
+   background: url('../img/icons/world.svg') 0px 50% no-repeat;
    color: #FFFFFF;
    margin: 32px 0px 0px 0px;
    .language-select {
+		display: none;
       position: relative;
       top: 10px;
-      left: 50px;
+      left: 25px;
       width: 170px;
       height: 18px;
-      background-color: #3B3B3B;
-      color: #FFFFFF;
+      background-color: #051945;
+		color: #FFFFFF;
    }
 }
 
@@ -89,15 +89,15 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   p,
    a {
-      padding: 5px 5px;
+      padding: 5px 10px;
       display: flex;
       align-items: center;
-		border-radius: 15px;
+      border-radius: 15px;
       img {
          width: 20px;
          height: 20px;
+         margin: 0px 5px 0px 0px;
       }
       transition: background-color 0.3s ease 0s;
       &:hover {
