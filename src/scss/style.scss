@@ -157,6 +157,15 @@ h3 {
          flex-direction: column;
       }
    }
+   .vos-dol-town {
+      height: 303px;
+   }
+}
+
+@media screen and (max-width: 499.98px) {
+   .vos-dol-town {
+      height: 203px;
+   }
 }
 
 
@@ -164,6 +173,7 @@ h3 {
 
 .information {
    &__box {
+      height: 450px;
       border-radius: 25px;
       padding: 50px 0px 100px 0px;
       background: linear-gradient(to bottom, #84ded5a0, #051945);
@@ -199,14 +209,14 @@ h3 {
       z-index: 10;
    }
    &__item {
-      margin: 35px 0px 0px 0px;
+      margin: 25px 0px 0px 0px;
    }
    &__link {
       h3 {
          @include resp-font(18,
          12);
          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-         line-height: 30px;
+         line-height: 25px;
          transition: background-color 0.3s ease 0s;
          &:hover {
             color: #ffc400;
@@ -217,7 +227,14 @@ h3 {
 
 @media screen and (max-width: 899.98px) {
    .information {
+      &__box {
+         height: 650px;
+      }
+      h2 {
+         margin: 15px 0px 30px 0px;
+      }
       &__body {
+         padding: 15px;
          display: flex;
          flex-direction: column;
          justify-content: center;
@@ -262,13 +279,14 @@ h3 {
          width: 300px;
          height: 250px;
          background: url('../img/icons/folder.png') center no-repeat;
-         background-size: 100% 100%;
+         background-size: 80% 80%;
          transition: all 0.3s ease 0s;
          img {
             display: none;
          }
          &:hover {
-            background-color: #051945;
+            background-color: #7188bb;
+				background-size: 80% 80%;
             img {
                display: block;
             }

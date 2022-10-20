@@ -67,6 +67,7 @@
    }
    &__link {
       h5 {
+			@include resp-font(18, 14);
          font-size: 22px;
          padding: 5px 10px;
          border-radius: 5px;

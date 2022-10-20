@@ -5,7 +5,7 @@
    margin: 45px 0px 0px 0px;
    background-color: #051945;
    padding: 0px 82px;
-	border-radius: 25px 25px 0px 0px;
+   border-radius: 25px 25px 0px 0px;
    a {
       color: rgb(254, 254, 254);
       transition: color 0.3s ease 0s;
@@ -35,7 +35,8 @@
       color: #FFFF;
    }
    a {
-      margin: 39px 0px 0px 0px;
+      line-height: 30px;
+      margin: 9px 0px 0px 0px;
       &:not(:first-child) {
          margin: 23px 0px 0px 0px;
       }
@@ -52,20 +53,20 @@
    color: #FFFFFF;
    margin: 32px 0px 0px 0px;
    .language-select {
-		display: none;
+      display: none;
       position: relative;
       top: 10px;
       left: 25px;
       width: 170px;
       height: 18px;
       background-color: #051945;
-		color: #FFFFFF;
+      color: #FFFFFF;
    }
 }
 
 .footer-links__line {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    .social-block {
       margin: 33px 0px 0px 0px;
       a {
@@ -110,5 +111,17 @@
    p {
       margin: 0px 0px 0px 1px;
       color: #FFFFFF;
+   }
+}
+
+@media (max-width:770.98px) {
+   .footer {
+      padding: 0px 20px;
+   }
+   .footer-links__line {
+      display: block;
+   }
+   .column {
+      width: 100%;
    }
 }

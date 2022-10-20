@@ -241,6 +241,16 @@ body {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+@media (max-width: 767px) {
+  .menu__link h5 {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1140));
+  }
+}
+@media (min-width: 766.98px) {
+  .menu__link h5 {
+    font-size: calc(14px + 4 * (100vw / 1140));
+  }
+}
 .menu__link h5:hover {
   padding: 5px 10px;
   border-radius: 5px;
@@ -411,12 +421,21 @@ h2 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .vos-dol-town {
+    height: 303px;
+  }
+}
+@media screen and (max-width: 499.98px) {
+  .vos-dol-town {
+    height: 203px;
+  }
 }
 /*INFORMATION*/
 .information {
   margin: 50px 0px 0px 0px;
 }
 .information__box {
+  height: 450px;
   border-radius: 25px;
   padding: 50px 0px 100px 0px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(132, 222, 213, 0.6274509804)), to(#051945));
@@ -461,11 +480,11 @@ h2 {
   z-index: 10;
 }
 .information__item {
-  margin: 35px 0px 0px 0px;
+  margin: 25px 0px 0px 0px;
 }
 .information__link h3 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  line-height: 30px;
+  line-height: 25px;
   -webkit-transition: background-color 0.3s ease 0s;
   -o-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
@@ -485,7 +504,14 @@ h2 {
 }
 
 @media screen and (max-width: 899.98px) {
+  .information__box {
+    height: 650px;
+  }
+  .information h2 {
+    margin: 15px 0px 30px 0px;
+  }
   .information__body {
+    padding: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -550,7 +576,7 @@ h2 {
   width: 300px;
   height: 250px;
   background: url("../img/icons/folder.png") center no-repeat;
-  background-size: 100% 100%;
+  background-size: 80% 80%;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -559,13 +585,14 @@ h2 {
   display: none;
 }
 .events__content a:hover {
-  background-color: #051945;
+  background-color: #7188bb;
+  background-size: 80% 80%;
 }
 .events__content a:hover img {
   display: block;
 }
 
-@media (max-width: 1267.98px) {
+@media (max-width: 770.98px) {
   .icon-menu {
     width: 24px;
     height: 18px;
@@ -755,7 +782,8 @@ h2 {
   color: white;
 }
 .column a {
-  margin: 39px 0px 0px 0px;
+  line-height: 30px;
+  margin: 9px 0px 0px 0px;
 }
 .column a:not(:first-child) {
   margin: 23px 0px 0px 0px;
@@ -786,9 +814,8 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .footer-links__line .social-block {
   margin: 33px 0px 0px 0px;
@@ -856,4 +883,16 @@ h2 {
 .agreements p {
   margin: 0px 0px 0px 1px;
   color: #FFFFFF;
+}
+
+@media (max-width: 770.98px) {
+  .footer {
+    padding: 0px 20px;
+  }
+  .footer-links__line {
+    display: block;
+  }
+  .column {
+    width: 100%;
+  }
 }
