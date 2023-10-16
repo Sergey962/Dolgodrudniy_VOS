@@ -11,11 +11,11 @@
 @mixin flex($dis:flex, $jc:center, $ai:center) {display: $dis;justify-content: $jc;align-items: $ai;}
 
 //! ширина макета
-$maw: 1140; //todo 
+$maw: 1140; //todo
 
 //!Шрифт
 //? Заданый размер шрифта - $pcSize а желательный размер на мобилке $mobSize
-$maxWidth: $maw; //? ширина макета 
+$maxWidth: $maw; //? ширина макета
 @mixin resp-font($pcSize, $mobSize) {
    $addSize: $pcSize - $mobSize;
    $addMobSize: $addSize + ($addSize * 0.7);
@@ -29,14 +29,3 @@ $maxWidth: $maw; //? ширина макета
 
 //!Сетка
 [class*="container"] {max-width: $maw+px; margin: 0px auto;}
-
-/*
-// pc
-@media (max-width:1087px) {[class*="container"] {max-width: 970px;}}
-// tab
-@media (max-width:991.98px) {[class*="container"] {max-width: 750px;}}
-// phone
-@media (max-width:767.98px) {[class*="container"] {max-width: none;}}
-//small mobile
-@media (max-width: 479.98px) {[class*="container"] {max-width: none;}}
-*/
